@@ -1,4 +1,4 @@
-/* Header + main Title */
+/* Header + main Title VM */
 header {
     background-image: url(../img/header_background.png); 
     background-size: cover; 
@@ -6,7 +6,7 @@ header {
     background-repeat: no-repeat; 
     height: 100vh; 
 }
-.logo__header {
+.header__logo-image {
     width: 106px;
     height: 40px;
     display: block;
@@ -18,12 +18,12 @@ header {
     padding: 20px 140px;
 }
 
-.menu__header {
+.header__menu {
     order: 2;
     text-align: center;
 }
 
-.social__icons {
+.header__social-icons {
     order: 3; 
 }
 
@@ -38,7 +38,7 @@ header {
     text-decoration: none;
 }
 
-.logo__header {
+.header__logo-image {
     max-width: 100px; 
     height: auto; 
 }
