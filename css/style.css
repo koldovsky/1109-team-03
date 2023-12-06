@@ -1,0 +1,93 @@
+/* Header + main Title */
+header {
+    background-image: url(../img/header_background.png); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+}
+.logo__header {
+    width: 106px;
+    height: 40px;
+    display: block;
+}
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 140px;
+}
+
+.menu__header {
+    order: 2;
+    text-align: center;
+}
+
+.social__icons {
+    order: 3; 
+}
+
+.header__menu-item, .header__menu-link {
+    list-style: none;
+    display: inline-block; 
+    margin: 0 10px; 
+    color: rgb(141, 141, 141);
+    font-size: 11px;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.logo__header {
+    max-width: 100px; 
+    height: auto; 
+}
+
+.icon__item {
+    display: inline-block;
+    width: 30px; 
+    height: 30px; 
+    background-color: #8c9e8a; 
+    margin-left: 5px; 
+}
+
+.twitter {
+    background-image: url(../img/twitter.svg);
+}
+.youtube {
+    background-image: url(../img/youtube.svg);
+}
+.facebook {
+    background-image: url(../img/facebook.svg);
+}
+.instagram {
+    background-image: url(../img/instagram.svg);
+}
+.hero__section-home {
+    text-align: center;
+    color: #fff;
+    padding-left: 280px;
+    padding-right: 280px;
+    margin-top: -70vh;
+}
+.hero__description,
+.hero__title,
+.hero__subtitle {
+    margin: 0;
+    color: #2f3133;
+    font-family: sans-serif;
+}
+.hero__title {
+    font-weight: 700;
+    font-size: 69px;
+    margin-bottom: 10px;
+}
+.hero__subtitle {
+    font-size: 18px;
+    padding-top: 20px;
+    font-weight: 600;
+}
+.hero__subtitle a {
+    text-decoration: underline;
+    color: #8c9e8a;
+}
