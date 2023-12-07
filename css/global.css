@@ -1,4 +1,5 @@
 @import url(header.css);
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Open+Sans&display=swap'); /* "Archivo", "Open Sans" */
 
 * {
     margin: 0;
@@ -15,6 +16,14 @@ img {
     display: block;
     width: 100%;
 }
+
+:root {
+    --title-color:var(rgb(47, 49, 51));
+    --subtitle-color:var(rgb(112, 112, 112));
+    --text-color:var(rgb(141, 141, 141));
+    --link-color:var(rgb(140, 158, 138));
+}
+
 h1, h2, h3 {
     font-family: sans-serif;
     font-weight: 700;

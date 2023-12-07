@@ -1,0 +1,31 @@
+@import url(global.css);
+
+.questions {
+    font-family: "Open Sans", sans-serif;
+}
+
+.questions__description-title, .questions__info-title {
+    font-family: "Archivo", sans-serif;
+    color: var(--title-color);
+}
+
+.question__preview {
+    color: var(--title-color)
+}
+
+.questions p {
+    color: var(--text-color);
+}
+
+.questions__description-subtitle {
+    color: var(--subtitle-color);
+}
+
+.questions__description-contacts-link {
+    color: var(--link-color);
+}
+
+.questions__info-image img {
+    width: 40px;
+    height: 40px;
+}
