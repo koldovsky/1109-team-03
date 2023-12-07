@@ -1,5 +1,6 @@
-@import url(header.css);
 @import url('https://fonts.googleapis.com/css2?family=Archivo&family=Open+Sans&display=swap'); /* "Archivo", "Open Sans" */
+@import url(header.css);
+@import url(main-questions.partial.css);
 
 * {
     margin: 0;
