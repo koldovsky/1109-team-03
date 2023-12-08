@@ -8,10 +8,10 @@
 }
 
 :root {
-    --title-color: var(rgb(47, 49, 51));
-    --subtitle-color: var(rgb(112, 112, 112));
-    --text-color: var(rgb(141, 141, 141));
-    --link-color: var(rgb(140, 158, 138));
+    --title-color: rgb(47, 49, 51);
+    --subtitle-color: rgb(112, 112, 112);
+    --text-color: rgb(141, 141, 141);
+    --link-color: rgb(140, 158, 138);
 }
 
 body {
