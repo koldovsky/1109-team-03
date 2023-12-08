@@ -1,0 +1,31 @@
+.passion-menu__number {
+    color: rgb(112, 112, 112);
+    font-family: 'Archivo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    line-height: 18.37px;
+}
+
+.passion-menu__logo {
+    color: rgb(47, 49, 51);
+    font-size: 41px;
+    font-family: 'Archivo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.passion-menu__title {
+    color: rgb(112, 112, 112);
+    font-size: 18px;
+    font-family: 'Archivo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+.card__text{
+    color: rgb(112, 112, 112);
+    font-size: 18px;
+    font-family: 'Archivo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
