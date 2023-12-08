@@ -22,10 +22,127 @@
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
-.card__text{
+
+.card__text {
     color: rgb(112, 112, 112);
     font-size: 18px;
     font-family: 'Archivo', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
+
+.functionality__img {
+    width: 361.5px;
+    height: 341.375px;
+}
+
+.goods-menu__img {
+    width: 361.5px;
+    height: 341.375px;
+}
+
+.design__img {
+    width: 361.5px;
+    height: 341.375px;
+}
+
+.photo-text__img {
+    width: 46.67px;
+    height: 50px;
+}
+
+.photo-text__img {
+    width: 391.5px;
+    height: 40.516px;
+}
+
+.description__img {
+    width: 46.672px;
+    height: 50px;
+}
+
+.wide-range__img {
+    width: 50px;
+    height: 50px;
+}
+
+.minimum__img {
+    width: 50px;
+    height: 50px;
+}
+
+.photo-updates__img {
+    width: 50px;
+    height: 50px;
+}
+
+.easy-orders__img {
+    width: 50px;
+    height: 50px;
+}
+
+.worldwide__img {
+    width: 50px;
+    height: 50px;
+}
+
+.support-service__img {
+    width: 50px;
+    height: 50px;
+}
+
+.in-stock__img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-link {
+    color: rgb(140, 158, 138);
+    font-size: 19px;
+    font-family: 'Archivo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navigation-link {
+    color: rgb(140, 158, 138);
+    font-size: 14px;
+    font-family: 'Archivo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.benefits__number {
+    color: rgb(112, 112, 112);
+    font-family: 'Archivo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    line-height: 18.37px;
+}
+
+.benefits__logo {
+    color: rgb(47, 49, 51);
+    font-size: 41px;
+    font-family: 'Archivo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.benefits__title {
+    color: rgb(112, 112, 112);
+    font-size: 18px;
+    font-family: 'Archivo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.functionality__img:hover{
+    font-weight: 400;
+    color: rgb(47, 49, 51);
+    cursor: pointer;
+  } 
+
+.functionality__img:hover {
+    background-color: rgb(47, 49, 51);
+  }
