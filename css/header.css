@@ -1,14 +1,9 @@
 header {
-    background-image: url(../img/header_background.png); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    height: 100vh; 
-}
-.header__logo-image {
-    width: 106px;
-    height: 40px;
-    display: block;
+    background-image: url(../img/header_background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 .header__nav {
     display: flex;
@@ -17,51 +12,56 @@ header {
     /*padding: 20px 140px;*/
     padding: 20px 0; /*вибачаюся, але так доречніше  nav на всю максимальню ширину сайту без бокових педынгів*/
 }
-
+.header__logo-image {
+    max-width: 100px;
+    height: auto;
+}
 .header__menu {
     order: 2;
     text-align: center;
+    margin-left: auto; 
 }
-
-.header__social-icons {
-    order: 3; 
-}
-
-.header__menu-item, .header__menu-link {
+.header__menu-item,
+.header__menu-link {
     list-style: none;
-    display: inline-block; 
-    margin: 0 10px; 
-    color: rgb(141, 141, 141);
-    font-size: 11px;
+    display: inline-block;
+    margin: 0 10px;
+    color: #8c9e8a; 
+    font-size: 14px;
     font-weight: 600;
     font-family: sans-serif;
     text-decoration: none;
 }
-
-.header__logo-image {
-    max-width: 100px; 
-    height: auto; 
+.header__social_icons {
+    order: 3;
+    text-align: right;
+    margin-left: auto;
 }
-
 .icon__item {
     display: inline-block;
-    width: 30px; 
-    height: 30px; 
-    background-color: #8c9e8a; 
-    margin-left: 5px; 
+    width: 30px;
+    height: 30px;
+    background-color: #8c9e8a;
+    margin-left: 5px;
 }
-
 .twitter {
     background-image: url(../img/twitter.svg);
+    background-size: cover; 
 }
+
 .youtube {
     background-image: url(../img/youtube.svg);
+    background-size: cover;
 }
+
 .facebook {
     background-image: url(../img/facebook.svg);
+    background-size: cover;
 }
+
 .instagram {
     background-image: url(../img/instagram.svg);
+    background-size: cover;
 }
 .hero__section-home {
     text-align: center;
@@ -80,11 +80,10 @@ header {
 .hero__title {
     font-weight: 700;
     font-size: 69px;
-    margin-bottom: 10px;
 }
 .hero__subtitle {
     font-size: 18px;
-    padding-top: 20px;
+    padding-top: 10px;
     font-weight: 600;
 }
 .hero__subtitle a {
