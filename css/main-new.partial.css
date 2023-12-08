@@ -1,0 +1,14 @@
+.new-product {
+    
+}
+.new-product__titel {
+    color: var(--title-color);
+    font-size: 41px;
+    margin: auto;
+}
+
+.new-product__subscribe {
+    color: var(--subtitle-color);
+    font-size: 18px;
+}
+
