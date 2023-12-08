@@ -9,7 +9,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 140px;
+    /*padding: 20px 140px;*/
+    padding: 20px 0; /*вибачаюся, але так доречніше  nav на всю максимальню ширину сайту без бокових педынгів*/
 }
 .header__logo-image {
     max-width: 100px;
