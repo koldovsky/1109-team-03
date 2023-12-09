@@ -1,7 +1,7 @@
 .passion-menu__number {
     color: rgb(112, 112, 112);
     font-family: 'Open Sans', sans-serif;
-    font-size: 11px;
+    font-size: 16px;
     line-height: 18.37px;
     text-align: center;
 }
@@ -115,7 +115,7 @@
     font-family: 'Archivo', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
-    font-size: 11px;
+    font-size: 16px;
     line-height: 18.37px;
     text-align: center;
 }
@@ -138,23 +138,37 @@
     text-align: center;
 }
 
-.functionality__img:hover{
-    font-weight: 400;
-    color: rgb(47, 49, 51);
-    cursor: pointer;
-  } 
-
-.functionality__img:hover {
-    background-color: rgb(47, 49, 51);
-  }
-
-  @media (min-width: 768px) {
-    .section-main__passion {
-      flex-direction: column;
-    }
+.passion-menu__goods-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   
-  .passion-menu__goods-menu {
-    padding: 15px;
-    
+  .goods-menu__item {
+    width: 100%; 
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .goods-menu__item {
+      width: calc(50% - 20px); 
+    }
+  }
+
+  .section-benefits {
+    background-color: aquamarine;
+  }
+
+  .information__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .information__cards {
+      width: calc(50% - 20px); 
+    }
   }
