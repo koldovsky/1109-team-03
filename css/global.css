@@ -13,10 +13,14 @@
     --text-color: rgb(141, 141, 141);
     --link-color: rgb(140, 158, 138);
     --bg-new-product-message: #f7f4f0;
+    --footer-background-color: #2f3133;
+    --footer-text-color: #ffffffd1;
+    --footer-block-margin: 30px 0 0 0;
+    --footer-title-color: rgb(255, 255, 255);
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     color: #333;
@@ -32,4 +36,8 @@ h2,
 h3 {
     font-family: sans-serif;
     font-weight: 700;
+}
+a{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
 }
