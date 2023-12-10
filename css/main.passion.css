@@ -1,31 +1,207 @@
 .passion-menu__number {
     color: rgb(112, 112, 112);
-    font-family: 'Archivo', sans-serif;
-    font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-size: 11px;
     line-height: 18.37px;
+    text-align: center;
 }
 
 .passion-menu__logo {
     color: rgb(47, 49, 51);
     font-size: 41px;
-    font-family: 'Archivo', sans-serif;
-    font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
+    text-align: center;
 }
 
 .passion-menu__title {
     color: rgb(112, 112, 112);
     font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.card__text {
+    color: rgb(112, 112, 112);
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.functionality__img {
+    width: 361.5px;
+    height: 341.375px;
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 500px;
+}
+
+.goods-menu__img {
+    width: 361.5px;
+    height: 341.375px;
+}
+
+.design__img {
+    width: 361.5px;
+    height: 341.375px;
+}
+
+.photo-text__img {
+    width: 46.67px;
+    height: 50px;
+}
+
+.photo-text__img {
+    width: 391.5px;
+    height: 40.516px;
+}
+
+.description__img {
+    width: 46.672px;
+    height: 50px;
+}
+
+.wide-range__img {
+    width: 50px;
+    height: 50px;
+}
+
+.minimum__img {
+    width: 50px;
+    height: 50px;
+}
+
+.photo-updates__img {
+    width: 50px;
+    height: 50px;
+}
+
+.easy-orders__img {
+    width: 50px;
+    height: 50px;
+}
+
+.worldwide__img {
+    width: 50px;
+    height: 50px;
+}
+
+.support-service__img {
+    width: 50px;
+    height: 50px;
+}
+
+.in-stock__img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-link {
+    color: rgb(140, 158, 138);
+    font-size: 19px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navigation-link {
+    color: rgb(140, 158, 138);
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.benefits__number {
+    color: rgb(112, 112, 112);
     font-family: 'Archivo', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    line-height: 18.37px;
+    text-align: center;
 }
-.card__text{
+
+.benefits__logo {
+    color: rgb(47, 49, 51);
+    font-size: 41px;
+    font-family: 'Archivo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.benefits__title {
     color: rgb(112, 112, 112);
     font-size: 18px;
     font-family: 'Archivo', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.passion-menu__goods-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .goods-menu__item {
+    width: 100%; 
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .goods-menu__item {
+      width: calc(50% - 20px); 
+    }
+  }
+
+  .information__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+ 
+  @media (max-width: 767px) {
+    .information__card {
+        width: 100%; 
+    }
+}
+
+
+@media (min-width: 768px) {
+    .information__card {
+        width: calc(25% - 20px);    }
+}
+
+  .section-main__passion {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .section-benefits {
+    background-image: url(/img/background/benefits-background.svg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    padding-top: 115px;
+    padding-bottom: 120px;
+}
+
+.information__card {
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 45px;
+    padding-left: 45px;
+}
+
+.information-logo {
+    font-family: 'Archivo', sans-serif;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.benefits {
+    margin right: -15px;
+    margin left: -15px;
+    padding left: 15px;
+    padding right: 15px;
 }
