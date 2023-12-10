@@ -1,0 +1,45 @@
+.about {
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  
+  .about__picture {
+    margin-right: 20px;
+    max-width: 50%;
+    height: auto;
+  }
+  
+  img {
+    width: 50%;
+    height: auto;
+  }
+  
+  .about__main {
+    flex: 1; 
+  }
+  
+  .about__text {
+    margin-bottom: 10px; 
+  }
+  
+  .button-container {
+    margin-top: 20px; 
+  }
+  
+  .about__download {
+    text-align: center; 
+  }
+  
+  .about__download, .button-download {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: auto;
+    background-color: rgb(229, 233, 226); 
+    color: black;
+    padding: 0px;
+    text-align: center;
+  }
