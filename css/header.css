@@ -106,7 +106,9 @@ header {
     text-decoration: underline;
     color: #8c9e8a;
 }
-
+.header__menu-icon {
+    display: none;
+}
 @media screen and (max-width: 768px) {
 
     .header__menu {
