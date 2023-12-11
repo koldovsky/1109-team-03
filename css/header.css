@@ -1,9 +1,11 @@
-header {
+header  {
     background-image: url(../img/header_background.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    max-width: 100%;
+    position: relative;
 }
 
 .header__nav {
@@ -73,14 +75,18 @@ header {
     background-image: url(../img/instagram.svg);
     background-size: cover;
 }
-
+.hero {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
 .hero__container {
     text-align: center;
     color: #fff;
     padding-left: 280px;
     padding-right: 280px;
-    margin-top: -70vh;
-    padding-bottom: 200px;
 }
 
 .hero__description,
