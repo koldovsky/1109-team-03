@@ -1,23 +1,85 @@
-.offer, .product-slider {
+.offer {
+    padding: 20px;
+    width: 272px;
+}
+
+.offer .offer__content-section-number {
+    display: block;
     box-sizing: border-box;
-    background-color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 232;
+    color: var(--text-color);
+    font-family: "Open Sans";
+    font-size: 11px;
+    font-weight: 700;
+    font-stretch: 100%;
+    line-height: 18.37px;
+    letter-spacing: 2.2px;
 }
 
-.menu__icon {
-    width: 50px;
+@media (max-width: 768px) {
+
+    .offer {
+        display: flex;
+        flex-direction: column;
+        width: 428.222px;
+    }
+
 }
 
-.product-slider__icon {
-    width: 242px;
+@media (min-width: 768px) {
+
+    .offer {
+        text-align: left;
+    }
+
+.offer .offer__content-title {
+    display: block;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 213.9px;
+    color: var(--title-color);
+    font-family: "Archivo", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    font-stretch: 100%;
+    line-height: 38.76px;
+    letter-spacing: normal;
 }
 
-.offer__content-section-number {
-    color: rgb(141, 141, 141);
-    font-size: 0.688rem;
-    font-weight: bold;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
+.offer {
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.offer .offer__content-list {
+    display: block;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 258.98px;
+    color: var(--subtitle-color);
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: 100%;
+    line-height: 27pxpx;
+    letter-spacing: normal;
+}
+
+.offer .offer__content-description {
+    display: inline;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 268.93px;
+    color: var(--text-color);
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: 100%;
+    line-height: 25.6px;
+    letter-spacing: normal;
 }
