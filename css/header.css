@@ -25,11 +25,14 @@ header {
     list-style: none;
     display: inline-block;
     margin: 0 10px;
-    color: #8c9e8a; 
-    font-size: 14px;
+    color: var(--header-nav-link); 
+    font-size: 12px;
     font-weight: 600;
     font-family: sans-serif;
     text-decoration: none;
+}
+.header__menu-link:hover {
+    color: black;
 }
 .header__social_icons {
     order: 3;
@@ -40,7 +43,7 @@ header {
     display: inline-block;
     width: 30px;
     height: 30px;
-    background-color: #8c9e8a;
+    background-color: var(--header-icongb-color);
     margin-left: 5px;
 }
 .twitter {
@@ -62,18 +65,19 @@ header {
     background-image: url(../img/instagram.svg);
     background-size: cover;
 }
-.hero__section-home {
+.hero__container {
     text-align: center;
     color: #fff;
     padding-left: 280px;
     padding-right: 280px;
     margin-top: -70vh;
+    padding-bottom: 200px;
 }
 .hero__description,
 .hero__title,
 .hero__subtitle {
     margin: 0;
-    color: #2f3133;
+    color: var(--header-title-color);
     font-family: sans-serif;
 }
 .hero__title {
