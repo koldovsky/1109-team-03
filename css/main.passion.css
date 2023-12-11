@@ -59,36 +59,12 @@
     height: 50px;
 }
 
-.wide-range__img {
-    width: 50px;
-    height: 50px;
-}
-
-.minimum__img {
-    width: 50px;
-    height: 50px;
-}
-
-.photo-updates__img {
-    width: 50px;
-    height: 50px;
-}
-
-.easy-orders__img {
-    width: 50px;
-    height: 50px;
-}
-
-.worldwide__img {
-    width: 50px;
-    height: 50px;
-}
-
-.support-service__img {
-    width: 50px;
-    height: 50px;
-}
-
+.wide-range__img,
+.minimum__img,
+.photo-updates__img,
+.easy-orders__img,
+.worldwide__img,
+.support-service__img,
 .in-stock__img {
     width: 50px;
     height: 50px;
@@ -135,50 +111,51 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  
-  .goods-menu__item {
-    width: 100%; 
+}
+
+.goods-menu__item {
+    width: 100%;
     box-sizing: border-box;
     margin-bottom: 20px;
-  }
-  
-  @media (min-width: 768px) {
-    .goods-menu__item {
-      width: calc(50% - 20px); 
-    }
-  }
+}
 
-  .information__cards {
+@media (min-width: 768px) {
+    .goods-menu__item {
+        width: calc(50% - 20px);
+    }
+}
+
+.information__cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 50px;
-  }
-  
- 
-  @media (max-width: 767px) {
+}
+
+
+@media (max-width: 767px) {
     .information__card {
-        width: 100%; 
+        width: 100%;
     }
 }
 
 
 @media (min-width: 768px) {
     .information__card {
-        width: calc(25% - 20px);    }
+        width: calc(25% - 20px);
+    }
 }
 
-  .section-main__passion {
+.section-main__passion {
     padding-top: 90px;
     padding-bottom: 90px;
-  }
+}
 
-  .section-benefits {
+.section-benefits {
     background-image: url(/img/background/benefits-background.svg);
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding-top: 115px;
     padding-bottom: 120px;
 }
@@ -189,6 +166,8 @@
     padding-bottom: 30px;
     padding-right: 45px;
     padding-left: 45px;
+    display: grid;
+    place-items: center;
 }
 
 .information-logo {
@@ -206,14 +185,15 @@
 
 @media (max-width: 767px) {
     .information-bottom__card {
-        width: 100%; 
+        width: 100%;
     }
 }
 
 
 @media (min-width: 768px) {
     .information-bottom__card {
-        width: calc(25% - 20px);    }
+        width: calc(25% - 20px);
+    }
 }
 
 .information-bottom__card {
@@ -223,9 +203,18 @@
     padding-right: 45px;
     padding-left: 45px;
     margin-top: 30px;
+    display: grid;
+    place-items: center;
 }
 
 .block-benefits {
     padding-right: 40px;
     padding-left: 40px;
+}
+
+.block-benefits{
+    margin-right: 78.5px;
+    margin-left: 78.5px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
