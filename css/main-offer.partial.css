@@ -70,7 +70,7 @@
 }
 
 .offer .offer__content-description {
-    display: inline;
+    display: block;
     box-sizing: border-box;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -82,4 +82,8 @@
     font-stretch: 100%;
     line-height: 25.6px;
     letter-spacing: normal;
+}
+
+.offer-menu .menu__link {
+    width: 50px;
 }
