@@ -8,20 +8,22 @@
 }
 
 :root {
-    --title-color: var(rgb(47, 49, 51));
-    --subtitle-color: var(rgb(112, 112, 112));
-    --text-color: var(rgb(141, 141, 141));
-    --link-color: var(rgb(140, 158, 138));
+    --title-color: rgb(47, 49, 51);
+    --subtitle-color: rgb(112, 112, 112);
+    --text-color: rgb(141, 141, 141);
+    --link-color: rgb(140, 158, 138);
+    --bg-new-product-message: #f7f4f0;
+    --footer-background-color: #2f3133;
+    --footer-text-color: #ffffffd1;
+    --footer-block-margin: 30px 0 0 0;
+    --footer-title-color: rgb(255, 255, 255);
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     color: #333;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 img {
@@ -34,4 +36,8 @@ h2,
 h3 {
     font-family: sans-serif;
     font-weight: 700;
+}
+a{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
 }

@@ -1,0 +1,23 @@
+.offer, .product-slider {
+    box-sizing: border-box;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 90px;
+}
+
+.menu__icon {
+    width: 50px;
+}
+
+.product-slider__icon {
+    width: 242px;
+}
+
+.offer__content-section-number {
+    color: rgb(141, 141, 141);
+    font-size: 0.688rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
