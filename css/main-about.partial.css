@@ -12,8 +12,8 @@
     height: auto;
   }
   
-  img {
-    width: 50%;
+  .about__picture img {
+    width: 100%;
     height: auto;
   }
   
@@ -34,7 +34,6 @@
   }
   
   .about__download, .button-download {
-    position: absolute;
     bottom: 0;
     width: 80%;
     height: auto;
