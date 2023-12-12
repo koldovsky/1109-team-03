@@ -1,26 +1,28 @@
 .subscribe {
-    height: 80vw;
+    height: 750px;
     width: 100%;
-    background-image: url(../img/person-icon.jpg);
+    background-image: url(../img/subscribe/backgraund-subscribe-section.png);
+    background-repeat: no-repeat;
+    object-fit: fill;
+    background-position: center;
+    padding: 180px 0;
+    filter: brightness(0.7);
+
 
     display: flex;
 }
 
 .subscribe__container {
-    width: 50vw;
-    height: 60vw;
-    background-color: grey;
+    width: max-content;
+    background-color: rgba(47, 49, 51, 0.87);
 
     margin: auto ;
     padding: 30px;
-    align-items: center;
-    justify-content: center;
 }
 
 .subscribe_number {
     display: block;
-    text-align: center; 
-    width: 100%;
+    text-align: center;
 
     font-size: 15px;
     color: white;
@@ -39,4 +41,32 @@
     font-size: 18px;
     font-style: italic;
     margin-bottom: 30px;
+    text-align: center;
 }
+
+.button {
+    align-items: center;
+    width: min-content;
+    height: 120px;
+    margin: 0 auto;
+
+}
+
+.input {
+    background-color: #ffffff14;
+    height: 45px;
+    width: 440px;
+    display: block;
+    margin-bottom: 15px;
+    border: none;
+}
+
+.submit {
+    height: 45px;
+    width: 440px;
+    background-color: teal;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+}
+
