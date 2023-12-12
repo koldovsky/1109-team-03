@@ -1,0 +1,42 @@
+.subscribe {
+    height: 80vw;
+    width: 100%;
+    background-image: url(../img/person-icon.jpg);
+
+    display: flex;
+}
+
+.subscribe__container {
+    width: 50vw;
+    height: 60vw;
+    background-color: grey;
+
+    margin: auto ;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe_number {
+    display: block;
+    text-align: center; 
+    width: 100%;
+
+    font-size: 15px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.subscribe_title {
+    color: #fff;
+    font-size: 33px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.subscribe__text {
+    color: #fff;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
