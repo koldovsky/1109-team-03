@@ -168,7 +168,8 @@
     font-size: 19px;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
-    letter-spacing: normal;
+    padding: 0;
+    
 }
 
 .passion-menu__undertitle {
@@ -197,12 +198,16 @@
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1300px;
+    max-width: 1200px;
     height: auto;
-    align-items: center;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
+}
+
+.menu-right__side,
+.menu-left__side {
+    width: 50%;
 }
 
 .nav-link:hover {
@@ -219,6 +224,15 @@
 
 .passion-menu__link {
     margin-top: 20px;
+}
+
+.passion-menu__links {
+    display: flex;
+    flex-direction: row;
+}
+
+.passion-menu__link:hover {
+    color: rgb(140, 158, 138);
 }
 
 @media (max-width: 767px) {
