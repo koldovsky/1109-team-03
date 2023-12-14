@@ -60,7 +60,7 @@
     text-align: center;
     padding: 39px;
 }
-.new-product__message-box-titel{
+.new-product__message-box-titel {
     font-size: 30px;
     
 }
@@ -86,13 +86,13 @@
 .catalog__item-link:hover {
     text-decoration: underline;
 }
-.catalog__item-price{
+.catalog__item-price {
     color: #8c9e8a;
     font-size: 19px;
     font-weight: 600;
     margin-bottom: 24px;
 }
-.catalog__item-price-old{
+.catalog__item-price-old {
     color: #c5cbd6;
     text-decoration: line-through;
     margin-right: 15px;
@@ -104,52 +104,51 @@
     background-color:#8c9e8a;
     cursor: pointer;
 }
-.new-product__review-item {
-    margin-top: 30px;
-    width: 25%;
-}
 .new-product__carousel {
-    position: relative;
     width: 100%;
+    padding: 20px 0;
     display: flex;
-    align-items: center;  
+    justify-content: space-between;
 }
 .new-product__carousel-conteiner {
-    width: 100%;
     overflow: hidden;
+}
+.new-product__carousel-arrow {
+    font-size: 24px;
+    cursor: pointer;
+    color: blue;
+    height: auto;
+    display: flex;
+    align-items: center;
+    
+}
+.carusel-left {
+    left: 15px;
+}
+.carusel-right {
+    right: 15px;
 }
 .new-product__review {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
-.new-product__carousel-arrow {
-    top: 50%;
-    font-size: 24px;
-    cursor: pointer;
-    user-select: none;
-    color: blue;
-}
-.carusel-left {
-    left: 10px;
-}
-.carusel-right {
-    right: 10px;
-}
 .new-product__review-item {
-    min-width: 48%;
+    min-width: 97%;
     box-sizing: border-box;
     border: 1px solid lightgray;
     padding: 50px 60px;
     display: flex;
-    flex-direction: column; /* Устанавливаем направление столбцом */
-    align-items: center; /* Центрируем по горизонтали */
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     margin: 15px;
+    margin-top: 30px;
 }
+
 .new-product__review-item-foto {
-    width: 120px; /* Задайте ширину и высоту контейнера */
+    width: 120px;
     height: 120px;
-    overflow: hidden; /* Обрезаем содержимое, выходящее за пределы контейнера */
+    overflow: hidden;
     border-radius: 50%;
     margin-bottom: 10px;
 }
@@ -175,7 +174,10 @@
     }
     .new-product_img-box {
         display: block;
-    }    
+    }
+    .new-product__review-item {
+        min-width: 47%;
+    }        
 }
 @media (min-width: 992px) {
     .catalog__items {

@@ -19,6 +19,10 @@
     --footer-title-color: rgb(255, 255, 255);
     --questions-icon-background: rgb(247, 244, 240);
     --questions-line-color: rgb(47, 49, 51);
+    --footer-link-color: #8c9e8a;
+    --header-icongb-color: #8c9e8a;
+    --header-title-color: #2f3133;
+    --header-nav-link: #8d8d8d;
 }
 
 body {
@@ -42,4 +46,8 @@ h3 {
 a{
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
+}
+dl, ol, ul{
+    margin: 0;
+    padding: 0;
 }
