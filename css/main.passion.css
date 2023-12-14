@@ -249,7 +249,7 @@
 }
 
 .passion-menu__link:hover {
-    color: rgb(140, 158, 138);
+    text-decoration: underline solid var(--link-color);
 }
 
 @media (max-width: 767px) {
@@ -350,4 +350,32 @@
     font-size: 24px;
     font-weight: 700;
     font-family: 'Archivo', sans-serif;
+}
+
+.navigation-link:hover {
+    color: var(--link-color);
+}
+
+.navigation-arrow {
+    color: var(--link-color);
+}
+
+.navigation-arrow:hover {
+    color: var(--link-color);
+}
+
+.navigation-arrow:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+    .navigation-links {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        max-width: 732px;
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
 }
