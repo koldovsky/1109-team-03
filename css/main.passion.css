@@ -14,7 +14,7 @@
 }
 
 .passion-menu__number {
-    color: rgb(47, 49, 51);
+    color: var(--title-color);
     font-family: "Open Sans", sans-serif;
     font-size: 11px;
     letter-spacing: 2.2px;
@@ -33,7 +33,7 @@
 
 .passion-menu__title {
     margin-top: 25px;
-    color: rgb(112, 112, 112);
+    color: var( --subtitle-color);
     font-size: 18px;
     font-weight: 600;
     font-family: "Open Sans", sans-serif;
@@ -162,7 +162,7 @@
 }
 
 .nav-link {
-    color: rgb(140, 158, 138);
+    color: var( --link-color);
     text-decoration: underline;
     text-decoration-skip-ink: none;
     font-size: 19px;
@@ -188,7 +188,7 @@
 }
 
 .passion-menu__undertitle {
-    color: rgb(141, 141, 141);
+    color: var( --text-color);
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -197,7 +197,7 @@
 }
 
 .navigation-link {
-    color: rgb(140, 158, 138);
+    color: var(--link-color);
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     text-decoration: underline;
@@ -209,7 +209,7 @@
 }
 
 .nav-link:hover {
-    color: rgb(140, 158, 138);
+    color: var(--link-color);
 }
 
 .menu-right__side {
@@ -232,7 +232,7 @@
 }
 
 .benefits__number {
-    color: rgb(47, 49, 51);
+    color: var(--title-color);
     font-family: "Open Sans", sans-serif;
     font-size: 11px;
     letter-spacing: 2.2px;
@@ -252,7 +252,7 @@
 
 .benefits__title {
     margin-top: 25px;
-    color: rgb(112, 112, 112);
+    color: var( --subtitle-color);
     font-size: 18px;
     font-weight: 600;
     font-family: "Open Sans", sans-serif;
@@ -275,13 +275,13 @@
     gap: 30px;
     margin: auto;
     padding-bottom: 120px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .information__card,
 .information-bottom__card {
     width: 100%;
-    max-width: 270px;
-    height: 245px;
     display: grid;
     place-items: center;
     padding: 30px;
@@ -374,11 +374,28 @@
         grid-template-columns: 1fr 1fr;
         grid-auto-rows: auto;
         align-items: center;
+        max-width: 906px;
+        width: 100%;
+        height: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+        aspect-ratio: 1 / 1;
     }
 }
 
 @media (min-width: 992px) {
     .menu-left__side {
         padding-left: 80px;
+    }
+}
+
+@media (max-width: 767px) {
+    .information__cards {
+        grid-template-columns: 1fr;
+        max-width: 704px;
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
