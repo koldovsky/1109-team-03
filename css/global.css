@@ -17,6 +17,8 @@
     --footer-text-color: #ffffffd1;
     --footer-block-margin: 30px 0 0 0;
     --footer-title-color: rgb(255, 255, 255);
+    --questions-icon-background: rgb(247, 244, 240);
+    --questions-line-color: rgb(47, 49, 51);
 }
 
 body {
