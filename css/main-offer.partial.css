@@ -103,3 +103,13 @@
     letter-spacing: 2.2px;
     padding-top: 60px;
 }
+
+
+.product-slider__price{
+    color: var(--link-color);
+    width: 98.64;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 26.6px;
+    margin-bottom: 24px;
+}
