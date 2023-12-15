@@ -1,4 +1,4 @@
-header  {
+header {
     background-image: url(../img/header_background.png);
     background-size: cover;
     background-position: center;
@@ -8,11 +8,8 @@ header  {
     position: relative;
 }
 
-.header__nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 140px;
+.transparent-header {
+    background-color: transparent !important;
 }
 
 .header__logo-image {
@@ -20,17 +17,16 @@ header  {
     height: auto;
 }
 
-.header__menu {
-    order: 2;
-    text-align: center;
-    margin-left: auto;
+.navbar-expand-lg {
+    padding: 20px 140px;
 }
 
-.header__menu-item,
-.header__menu-link {
+.navbar-collapse {
+    justify-content: center;
+}
+
+.navbar-nav .nav-link {
     list-style: none;
-    display: inline-block;
-    margin: 0 10px;
     color: var(--header-nav-link);
     font-size: 12px;
     font-weight: 600;
@@ -75,13 +71,15 @@ header  {
     background-image: url(../img/instagram.svg);
     background-size: cover;
 }
+
 .hero {
     position: absolute;
-    top: 50%; 
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
 }
+
 .hero__container {
     text-align: center;
     color: #fff;
@@ -112,10 +110,19 @@ header  {
     text-decoration: underline;
     color: #8c9e8a;
 }
+
 .header__menu-icon {
     display: none;
 }
+
 @media screen and (max-width: 768px) {
+    .mobile-nav-toggle {
+        display: block;
+    }
+
+    .navbar-expand-lg {
+        padding: 10px 20px;
+    }
 
     .header__menu {
         display: none;
