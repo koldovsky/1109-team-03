@@ -2,7 +2,6 @@
     width: 272px;
     margin: auto;
     padding-top: 80px;
-    padding-right: 20px;
 }
 
 .offer .offer__content-section-number {
@@ -19,46 +18,88 @@
     font-size: 34px;
     font-family: "Archivo", sans-serif;
     line-height: 38.76px;
-    padding-top: 20px;
-}
-
-.offer {
-    justify-content: flex-start;
-    flex-direction: column;
+    margin-top: 20px;
 }
 
 .offer .offer__content-list {
-    display: block;
-    box-sizing: border-box;
-    padding-top: 20px;
-    width: 258.98px;
     color: var(--subtitle-color);
-    font-family: "Open Sans", sans-serif;
     font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 20px;
     font-weight: 600;
-    font-stretch: 100%;
     line-height: 27px;
     letter-spacing: normal;
 }
 
 .offer .offer__content-description {
-    display: block;
-    box-sizing: border-box;
-    padding-top: 20px;
-    width: 268.93px;
     color: var(--text-color);
-    font-family: sans-serif;
     font-size: 16px;
+    font-family: sans-serif;
+    margin-top: 20px;
+    margin-bottom: 0;
     font-weight: 400;
-    font-stretch: 100%;
     line-height: 25.6px;
     letter-spacing: normal;
 }
 
 .menu__icon {
     width: 50px;
+    height: 50px;
+    padding-top: 60px;
+    padding-bottom: 5px;
+    display: block;
+    height: 100%;
+    max-width: 100%;
+    margin: auto;
+} 
+
+.menu__link {
+    display: block;
+    width: 71.26;
+    color: var(--subtitle-color);
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-stretch: 100%;
+    text-align: center;
 }
 
 .product-slider__icon {
     width: 242px;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.product-slider__header {
+    padding-top: 60px;
+    padding-left: 25;
+    text-align: center;
+}
+
+.product-slider__best {
+    display: inline;
+    color: var(--link-color);
+    font-size: 30px;
+    font-family: "Archivo", sans-serif;
+    font-weight: 600;
+}
+
+.product-slider__items {
+    display: inline;
+    color: var(--title-color);
+    font-size: 30px;
+    font-family: "Archivo", sans-serif;
+    font-weight: 600;
+}
+
+.product-slider__see-more {
+    display: block;
+    color: var(--link-color);
+    font-size: 11px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-decoration-line: underline;
+    letter-spacing: 2.2px;
+    padding-top: 60px;
 }
