@@ -104,6 +104,19 @@
     padding-top: 60px;
 }
 
+.product-slider__text {
+    color: var(--title-color);
+    width: auto;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 26.6px;
+    margin-bottom: 24px;
+}
+
+.product-slider__text:hover {
+    text-decoration: underline;
+    color: var(--title-color);
+}
 
 .product-slider__price{
     color: var(--link-color);
