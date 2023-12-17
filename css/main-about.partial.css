@@ -1,16 +1,37 @@
 .about {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-bottom: 10%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0;
+  padding-top: 60px;
+  padding-bottom: 105px; 
 }
 
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.about__picture img, .about__main {
+  width: 40%;
+  box-sizing: border-box;
+  align-items: center;
+}
 
 .about__picture {
   margin-right: 30px;
   margin-left: 30px;
-  max-width: 50%;
+  max-width: 40%;
+  padding-left: 30px;
+  padding-right: 30px;
   height: auto;
 }
 
@@ -19,9 +40,10 @@
   height: 100%;
 }
 
-.about__main {
-  flex: 1;
+.about__main { 
   text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .about__number {
@@ -30,9 +52,10 @@
 }
 
 .about__title {
+  font-family: "Archivo", "Open Sans";
+  font-weight: bold;
   color: var(--title-color);
-  font-size: 48px;
-  font-family: 'Archivo Black', sans-serif;
+  font-size: 48px; 
 }
 
 .about__text-main {
@@ -47,9 +70,8 @@
   margin-top: 15px;
   color: var(--text-color);
   font-size: 16px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
-
 
 .button-container {
   margin-top: 20px;
@@ -63,6 +85,7 @@
   border: 2px solid var(--button-main-color);
   background-color: var(--button-main-color);
   color: var(--footer-text-color);
+  border: none; 
 }
 
 .button-container__button:hover {
@@ -71,28 +94,44 @@
   border: var(--button-main-color);
 }
 
-.about__download,
-.button-download {
-  text-align: center;
+.about__download {
+  box-sizing: border-box;
+  bottom: 0;
+  width: 90%;
+  background-color: var(--about-download-color); 
+  padding: 20px; 
+  margin: 30px;
+  text-align: center; 
 }
 
-.about__download,
-.button-download {
-  position: absolute;
-  display: block;
-  bottom: -10%;
-  width: 80%;
-  height: auto;
-  background-color: var(--about-download-color);
+.about__download-text-main {
+  font-family: "Archivo", "Open Sans";
   color: var(--title-color);
-  padding: 0px;
-  margin: 10px;
-  text-align: center;
+  font-size: 33px; 
+  font-weight: bold; 
+  margin-bottom: 10px; 
 }
 
-.about__download-text-main,
 .about__download-text {
-  margin-bottom: 30px;
-  text-align: center;
-  color: var(--title-color);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: var(--link-color);
+  font-size: 18px; 
+  margin-bottom: 15px; 
+}
+
+.button-download__pdf {
+  background-color: var(--about-download-color); 
+  color: var(--link-color); 
+  font-weight: bold;
+  border: 2px solid var(--link-color);
+  padding: 10px 20px; 
+  font-size: 16px; 
+  transition: 0.3s;
+  cursor: pointer; 
+}
+
+.button-download__pdf:hover {
+  background-color: var(--link-color); 
+  color: var(--bg-new-product-message);
 }
