@@ -1,0 +1,40 @@
+/* НЕЗАВЕРШЕНЕ*/
+.latest-news__container {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    vertical-align: baseline;
+}
+.latest-news__top {
+margin-right: -20px;
+margin-left: -20px;
+padding-right: 20px;
+padding-left: 20px;
+display: block;
+-webkit-box-pack: center;
+}
+.latest-news__number {
+    color: var(--title-color);
+    font-family: "Open Sans";
+    font-size: 11px;
+    letter-spacing: 2.2px;
+    line-height: 18.37px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 700;
+}
+.latest-news__title {
+    color: var(--title-color);
+    font-size: 41px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+.latest-news__text {
+color: var(--subtitle-color);
+font-size: 18px;
+text-align: center;
+margin-top: 25px;
+}
