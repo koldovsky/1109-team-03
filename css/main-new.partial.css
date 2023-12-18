@@ -49,6 +49,7 @@
     display: none;
     gap: 10px;
 }
+
 .catalog__items.active {
     display: grid;
 }
@@ -141,6 +142,7 @@
 
 .new-product__carousel-arrow {
     font-size: 24px;
+    width: 5%;
     cursor: pointer;
     color: blue;
     height: auto;
@@ -160,19 +162,29 @@
 .new-product__review {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    margin-top: 30px;
+    padding: 15px;
 }
 
 .new-product__review-item {
-    min-width: 97%;
+    width: 100%;
     box-sizing: border-box;
+    /* border: 1px solid lightgray; */
+    /* padding: 50px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; */
+}
+
+.new-product__review-item div {
+    margin: 15px;
     border: 1px solid lightgray;
     padding: 50px 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 15px;
-    margin-top: 30px;
 }
 
 .new-product__review-item-foto {
@@ -211,7 +223,7 @@
     }
 
     .new-product__review-item {
-        min-width: 47%;
+        min-width: 50%;
     }
 }
 

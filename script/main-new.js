@@ -1,21 +1,27 @@
-let tabs = document.getElementsByClassName('tab__product');
-let sections = document.getElementsByClassName('catalog__items');
-window.confirm(tabs.length);
+document.addEventListener('DOMContentLoaded', function () {
+  const tabs = document.querySelectorAll('.tab__product');
+  const items = document.querySelectorAll('.catalog__items');
 
-for(let i =0; i<tabs.length; i++){
-   tabs[i].onclick = tabclick;
-}
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => {
+      // Remove the 'active' class from all tabs and items
+      tabs.forEach(t => t.classList.remove('active'));
+      items.forEach(item => item.classList.remove('active'));
 
-function tabclick(event){
-  let tab = event.target;
-  let tabId = tab.dataset.id;
-  window.confirm("sometext");
-  for(let k =0; k<tabs.length; k++){
-    tabs[k].classList.remove('active');
-    tabs[tabId-1].classList.add('active');
+      // Add the 'active' class to the clicked tab and its associated content
+      tab.classList.add('active');
+      items[index].classList.add('active');
+    });
+  });
+});
 
-    sections[k].classList.remove('active');
-    sections[tabId-1].classList.add('active'); 
+const reviewContainer = document.querySelector('.new-product__review');
+const items = document.querySelectorAll('.new-product__review-item');
+let currentIndex = 0;
 
-  }
+function moveCarousel(direction) {
+  const itemWidth = items[0].offsetWidth;
+  currentIndex = Math.max(0, Math.min(currentIndex + direction, items.length - 2));
+  const translateValue = -currentIndex * itemWidth + 'px';
+  reviewContainer.style.transform = 'translateX(' + translateValue + ')';
 }
