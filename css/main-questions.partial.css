@@ -1,35 +1,25 @@
 .questions {
     font-family: "Open Sans", sans-serif;
     background-image: url(../img/background/questions-background.svg);
+    background-size: cover;
+    min-height: 740px;
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
+    padding: 90px 24px;
 }
 
-.questions__description-main, 
-.questions__description-additional,  
-.questions__info {
-    margin-top: 60px;
+.question__answer {
+    display: none;
 }
 
-.questions__faq {
-    margin-top: 45px;
+.questions * {
+    margin-bottom: 0;
 }
 
-.questions__faq hr {
-    color: var(--questions-line-color);
-}
-
-.faq-list__question {
-    padding: 20px 0;
-}
-
-.questions .question__preview-title {
-    font-size: 19px;
-}
-
-.questions__info-item {
-    padding: 7.5px 0;
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
 }
 
 .questions__description-title {
@@ -43,63 +33,87 @@
     color: var(--title-color);
 }
 
-.question__preview {
-    color: var(--title-color);
-    display: flex;
-    flex-direction: row;
-}
-
-.questions__description-text, .question__answer, .questions__info-text {
-    color: var(--text-color);
-    font-size: 16px;
-}
-
 .questions__description-subtitle {
     color: var(--subtitle-color);
     font-size: 18px;
     font-weight: 600;
     margin-top: 25px;
 }
+ 
+.questions__description-additional,  
+.questions__info {
+    margin-top: 60px;
+}
+
+.questions__description-text, 
+.question__answer, 
+.questions__info-text {
+    color: var(--text-color);
+    font-size: 16px;
+}
 
 .questions__description-contacts-link {
     color: var(--link-color);
     margin-top: 20px;
-    text-decoration: underline;
     font-size: 14px;
     font-weight: 700;
 }
 
 .questions__description-contacts-link a {
     color: var(--link-color);
-}
-
-.questions__description-contacts-link span {
     text-decoration: none;
 }
 
-.questions__description-contacts-link span:hover {
+.questions__description-contacts-link span {
     text-decoration: underline;
 }
 
-.questions__info-image {
-    width: 26px;
-    height: 26px;
+.questions__description-contacts-link:hover {
+    text-decoration: underline;
 }
 
-.questions .question__answer {
-    margin-top: 25px;
+.questions__faq {
+    margin-top: 45px;
 }
 
 .questions__faq-list {
     list-style: none;
 }
 
-.questions .faq-list hr {
-    color: --questions-line-color;
+.questions__faq hr {
+    color: var(--questions-line-color);
+    margin: 0;
 }
 
-.questions__info-title {
-    font-size: 22px;
+.faq-list__question {
+    padding: 20px 0;
+}
+
+.question__preview {
+    color: var(--title-color);
+    display: grid;
+    grid-template-columns: 1fr 15px 15px; /*will be 2 column since one would be hiden */
+    line-height: 27px; /* to be removed */
+}
+
+.questions .question__preview-title {
+    font-size: 19px;
+}
+
+.question__preview span {
+    color: var(--subtitle-color);
+    font-size: 30px;
+}
+
+.questions .question__answer {
+    margin-top: 25px;
+}
+
+.questions__info-item {
+    padding: 15px 0;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 15px;
 }
 
 .questions__info-container {
@@ -112,43 +126,44 @@
     align-items: center;
 }
 
-.questions__info-item {
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    gap: 15px;
+.questions__info-image {
+    width: 26px;
+    height: 26px;
 }
 
-.questions__info-container, .questions__info-info {
-    margin: 7.5px;
+.questions__info-title {
+    font-size: 22px;
 }
 
-.question__preview span {
-    color: var(--subtitle-color);
-    font-size: 30px;
-}
-
-@media (min-width: 770px) {
-    .questions {
+@media (min-width: 768px) {
+    .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
+    .questions__description-main,
     .questions__description-additional,
+    .questions__faq, 
     .questions__info {
-        padding: 20px;
+        padding: 0 30px;
     }
 
-    .questions__info{
-        margin-top: 45px;
+    .questions__description-additional {
+        margin-top: 0;
     }
 
     .questions__description-title {
         font-size: 41px;
+        margin-top: 20px
     }
 
-    .questions__info-image {
-        width: 40px;
-        height: 40px;
+    .questions__info {
+        margin-top: 45px;
+    }
+
+    .questions__info-item {
+        grid-template-columns: 70px 1fr;
+        padding: 7.5px 0;
     }
 
     .questions__info-container {
@@ -156,8 +171,8 @@
         height: 70px;
     }
 
-    .questions__info-item {
-        grid-template-columns: 70px 1fr;
-        padding: 0;
+    .questions__info-image {
+        width: 40px;
+        height: 40px;
     }
 }
