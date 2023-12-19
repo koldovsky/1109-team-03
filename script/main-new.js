@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
 const reviewContainer = document.querySelector('.new-product__review');
 const items = document.querySelectorAll('.new-product__review-item');
 let currentIndex = 0;
