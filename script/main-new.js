@@ -20,8 +20,19 @@ const items = document.querySelectorAll('.new-product__review-item');
 let currentIndex = 0;
 
 function moveCarousel(direction) {
+  let ScreenOffset;
+  if (window.innerWidth < 769) {
+      ScreenOffset = 1;
+  } else {
+      ScreenOffset = 2;
+  }
   const itemWidth = items[0].offsetWidth;
-  currentIndex = Math.max(0, Math.min(currentIndex + direction, items.length - 2));
+  
+  currentIndex = Math.max(0, Math.min(currentIndex + direction, items.length - ScreenOffset));
   const translateValue = -currentIndex * itemWidth + 'px';
   reviewContainer.style.transform = 'translateX(' + translateValue + ')';
 }
+
+window.addEventListener('resize', function() {
+  moveCarousel(0);
+});

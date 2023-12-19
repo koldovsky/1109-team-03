@@ -106,6 +106,7 @@
 
 .catalog__item-link:hover {
     text-decoration: underline;
+    color: #2F3133;
 }
 
 .catalog__item-price {
@@ -129,6 +130,10 @@
     cursor: pointer;
 }
 
+.catalog_item-button:hover {
+    background-color: #917962;
+}
+
 .new-product__carousel {
     width: 100%;
     padding: 20px 0;
@@ -142,7 +147,7 @@
 
 .new-product__carousel-arrow {
     font-size: 24px;
-    width: 5%;
+    /* width: 10px; */
     cursor: pointer;
     color: blue;
     height: auto;
@@ -152,11 +157,11 @@
 }
 
 .carusel-left {
-    left: 15px;
+    left: 0;
 }
 
 .carusel-right {
-    right: 15px;
+    right: 0;
 }
 
 .new-product__review {
@@ -167,17 +172,12 @@
 }
 
 .new-product__review-item {
-    width: 100%;
+    min-width: 100%;
     box-sizing: border-box;
-    /* border: 1px solid lightgray; */
-    /* padding: 50px 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; */
 }
 
 .new-product__review-item div {
+    height: 100%;
     margin: 15px;
     border: 1px solid lightgray;
     padding: 50px 60px;
