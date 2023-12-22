@@ -4,6 +4,15 @@ class SmallestIntegerFinder {
       return Math.min(...args);
     }
   };
+  //or 
+class SmallestIntegerFinder {
+    findSmallestInt(args) {
+      if(args && args.length > 0) {
+        return Math.min(...args);
+      }
+      return undefined; 
+    }
+  }
 
 // 2 https://www.codewars.com/kata/geometry-basics-circle-circumference-in-2d/train/javascript
 
@@ -22,14 +31,7 @@ function giveMeFive(obj){
 }
 
 // 1 https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript
-class SmallestIntegerFinder {
-  findSmallestInt(args) {
-    if(args && args.length > 0) {
-      return Math.min(...args);
-    }
-    return undefined; 
-  }
-}
+
 // https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript
 function buildFun(n) {
     var res = [];
