@@ -30,3 +30,16 @@ class SmallestIntegerFinder {
     return undefined; 
   }
 }
+// https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript
+function buildFun(n) {
+    var res = [];
+
+    for (let i = 0; i < n; i++) {
+        res.push((function(num) {
+            return function() {
+                return num; 
+            };
+        })(i));
+    }
+    return res;
+}
