@@ -20,3 +20,13 @@ function giveMeFive(obj){
   }
   return rez;
 }
+
+// 1 https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    if(args && args.length > 0) {
+      return Math.min(...args);
+    }
+    return undefined; 
+  }
+}
