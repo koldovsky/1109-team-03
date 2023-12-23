@@ -423,7 +423,7 @@
     }
 
     .functionality__img:hover {
-        transform: scale(1.07);
+        transform: scale(1.04);
     }
 
     .goods-menu__item {
@@ -440,7 +440,7 @@
     }
 
     .mirror__img:hover {
-        transform: scale(1.07);
+        transform: scale(1.04);
     }
 
     .goods-menu__item {
@@ -457,6 +457,6 @@
     }
 
     .person__img:hover {
-        transform: scale(1.07);
+        transform: scale(1.04);
     }
 }
