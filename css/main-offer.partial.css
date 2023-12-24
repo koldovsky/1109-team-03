@@ -1,7 +1,8 @@
 .offer {
-    width: 272px;
     margin: auto;
     padding-top: 80px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .offer .offer__content-section-number {
@@ -105,7 +106,6 @@
 }
 
 .product-slider {
-    width: 242px;
     margin: auto;
     padding-bottom: 50px;
 }
