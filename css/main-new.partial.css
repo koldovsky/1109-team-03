@@ -122,7 +122,7 @@
     margin-right: 15px;
 }
 
-.catalog_item-button {
+.catalog__item-button {
     color: white;
     padding: 14px 20px;
     font-size: 15px;
@@ -130,7 +130,7 @@
     cursor: pointer;
 }
 
-.catalog_item-button:hover {
+.catalog__item-button:hover {
     background-color: #917962;
 }
 
