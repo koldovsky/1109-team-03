@@ -162,6 +162,17 @@
 }
 
 @media (min-width: 768px) {
+    .offer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .offer__content {
+        display: inline-block;
+    }
+    .offer__menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     .product-slider__images {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -169,6 +180,10 @@
 }
 
 @media (min-width: 992px) {
+    .offer__menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     .product-slider__images {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
