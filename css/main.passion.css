@@ -62,20 +62,6 @@
     aspect-ratio: 1 /1;
 }
 
-.functionality__img {
-    padding-right: 15px;
-}
-
-.mirror__img {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.person__img {
-    padding-left: 15px;
-}
-
-
 @media (max-width: 767px) {
     .passion-menu__goods-menu {
         display: grid;
@@ -403,7 +389,12 @@
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 991px) {
+
+    .passion-menu__goods-menu {
+        gap: 30px;
+    }
+
     .goods-menu__item,
     .functionality__img,
     .mirror__img,
