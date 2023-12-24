@@ -35,15 +35,17 @@ function renderTab(products) {
     for (let i = 0; i < products.length; i++) {
         const product = products[i];
         productsDomString += `
-        < article class="catalog_item" >
-        <a class="catalog__item-img-link" href="#">
-            <img class="catalog__item-img" src="${product.image}" alt="${product.title}">
-        </a>
-        <a class="catalog__item-link" href="#">${product.title}</a>
-        <p class="catalog__item-price"><span class="catalog__item-price-old">$${product.price}</span>
-        <span>$${product.price}USD</span></p>
-        <span class="catalog__item-button">Add to Cart</span>
-        </article >` ;
+            <article class="catalog_item">
+                <a class="catalog__item-img-link" href="#">
+                    <img class="catalog__item-img" src="${product.image}" alt="${product.title}">
+                </a>
+                <a class="catalog__item-link" href="#">${product.title}</a>
+                <p class="catalog__item-price"><span
+                        class="catalog__item-price-old">$310USD</span><span>$${product.price}USD</span></p>
+                <span class="catalog__item-button">Add to Cart</span>
+            </article>
+           
+        `;
     };
     console.log(productsDomString); 
     const productsContainer = document.querySelector('.catalog__items');
