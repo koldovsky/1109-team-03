@@ -34,3 +34,19 @@ arrowRight.addEventListener('click', function(){
 window.addEventListener('resize', function(){
     moveCarousel(0)
 });
+
+const startX = 0;
+const endX = 0;
+
+const carouselSwaip = document.getElementsByClassName('new-product__carousel-conteiner');
+
+carouselSwaip.addEventListener('touchstart', (e)=>{
+    startX = e.touches[0].clientX;
+});
+
+carouselSwaip.addEventListener('touchend', (e)=>{
+    endX = e.changedTouches[0].clientX;
+    const swipeDistance = startX - endX;
+    if (swipeDistance > 50) moveCarousel(-1);
+    if (swipeDistance < -50) moveCarousel(1);
+});
