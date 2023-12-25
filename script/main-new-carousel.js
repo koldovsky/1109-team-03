@@ -1,3 +1,8 @@
+import reviewContent from "../content/review.js";
+import {renderReview} from "./main-new-render-carousel.js"
+
+renderReview(reviewContent);
+
 const reviewContainer = document.querySelector('.new-product__review');
 const itemCarousel = document.querySelectorAll('.new-product__review-item');
 let currentIndex = 0;

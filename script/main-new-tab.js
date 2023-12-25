@@ -1,3 +1,8 @@
+import contentTab from "../content/tab.js";
+import { renderTab } from "./main-new-render-tab.js";
+
+renderTab(contentTab);
+
 const tabs = document.querySelectorAll('.tab__product');
 const items = document.querySelectorAll('.catalog__items');
 
@@ -10,3 +15,4 @@ tabs.forEach((tab, index) => {
     items[index].classList.add('active');
   });
 });
+console.log('tab meh');
