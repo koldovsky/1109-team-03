@@ -1,8 +1,8 @@
 .offer {
     margin: auto;
-    padding-top: 80px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-top: 115px;
+    padding-bottom: 30px;
+    width: 70%;
 }
 
 .offer .offer__content-section-number {
@@ -94,12 +94,11 @@
 }
 
 .product-slider__see-more {
-    display: block;
+    display: inline;
     color: var(--link-color);
     font-size: 11px;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
-    text-align: center;
     text-decoration-line: underline;
     letter-spacing: 2.2px;
     padding-top: 60px;
@@ -108,7 +107,9 @@
 .product-slider {
     margin: auto;
     padding-bottom: 50px;
+    width: 70%;
 }
+
 
 .product-slider__text {
     color: var(--title-color);
