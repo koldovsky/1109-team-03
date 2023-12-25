@@ -24,8 +24,6 @@
     text-align: left;
     margin-bottom: 30px;
     margin-top: 50px;
-    margin-left: 15px;
-    margin-left: 15px;
     border-bottom: 1px solid lightgray
 }
 
@@ -44,18 +42,16 @@
     cursor: pointer;
     color: green;
 }
-
+.new-product__catalog {
+    margin-bottom: 55px;
+}
 .catalog__items {
     display: none;
-    gap: 10px;
+    gap: 30px;
 }
 
 .catalog__items.active {
     display: grid;
-}
-
-.catalog_item {
-    padding: 0 15px;
 }
 
 .catalog__item-img {
@@ -66,7 +62,8 @@
     background-color: var(--bg-new-product-message);
     display: flex;
     align-items: center;
-    margin-top: 55px;
+    height: 274px;;
+    
 }
 
 .new-product__message-box {
@@ -78,22 +75,26 @@
 
 .new-product__message-box-titel {
     font-size: 30px;
+    text-align: center;
 
 }
 
 .new-product__message-box-subtitle {
     font-size: 18px;
+    text-align: center;
 }
 
 .new-product_img-box {
+    height: 100%;
     display: none;
     flex: 1;
     overflow: hidden;
+    position: relative;
 }
 
 .new-product_img-box img {
     height: 100%;
-    width: auto;
+    object-fit: cover;
 }
 
 .catalog__item-link {
@@ -113,7 +114,7 @@
     color: #8c9e8a;
     font-size: 19px;
     font-weight: 600;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
 }
 
 .catalog__item-price-old {
@@ -146,29 +147,36 @@
 }
 
 .new-product__carousel-arrow {
-    font-size: 24px;
-    /* width: 10px; */
     cursor: pointer;
     color: blue;
     height: auto;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
 
+.new-product__carousel-arrow-img {
+    height: 30px;
+    width: 30px;
+    filter: invert(50%);
+}
+
+.carusel-left .new-product__carousel-arrow-img {
+    transform: rotate(180deg);
 }
 
 .carusel-left {
-    left: 0;
+    margin-left: 0;
 }
 
 .carusel-right {
-    right: 0;
+    margin-right: 0;
 }
 
 .new-product__review {
     display: flex;
     transition: transform 0.5s ease-in-out;
     margin-top: 30px;
-    padding: 15px;
 }
 
 .new-product__review-item {
@@ -178,7 +186,7 @@
 
 .new-product__review-item div {
     height: 100%;
-    margin: 15px;
+    margin: 0 15px;
     border: 1px solid lightgray;
     padding: 50px 60px;
     display: flex;
@@ -217,13 +225,34 @@
     .new-product__tab {
         text-align: center;
     }
+    
+    .new-product__message {
+        height: 300px;
+    }
+    
+    .new-product__message-box-titel {
+        text-align: left;
+    }
+    
+    .new-product__message-box-subtitle {
+        text-align: left;
+    }
 
     .new-product_img-box {
         display: block;
     }
 
+
     .new-product__review-item {
         min-width: 50%;
+    }
+
+    .carusel-left {
+        margin-left: -15px;
+    }
+    
+    .carusel-right {
+        margin-right: -15px;
     }
 }
 
@@ -231,4 +260,9 @@
     .catalog__items {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    
+    .new-product__message {
+        height: 339px;
+    }
 }
+

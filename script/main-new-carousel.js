@@ -1,3 +1,8 @@
+import reviewContent from "../content/review.js";
+import {renderReview} from "./main-new-render-carousel.js"
+
+renderReview(reviewContent);
+
 const reviewContainer = document.querySelector('.new-product__review');
 const itemCarousel = document.querySelectorAll('.new-product__review-item');
 let currentIndex = 0;
@@ -28,4 +33,19 @@ arrowRight.addEventListener('click', function(){
 });
 window.addEventListener('resize', function(){
     moveCarousel(0)
+});
+
+let startX = 0;
+let endX = 0;
+
+const carouselSwaip = document.getElementById('qwerty');
+carouselSwaip.addEventListener('touchstart', (e)=>{
+    startX = e.touches[0].clientX;
+});
+
+carouselSwaip.addEventListener('touchend', (e)=>{
+    endX = e.changedTouches[0].clientX;
+    const swipeDistance = startX - endX;
+    if (swipeDistance > 0) moveCarousel(1);
+    if (swipeDistance < 0) moveCarousel(-1);
 });
