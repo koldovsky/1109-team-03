@@ -1,10 +1,9 @@
-/* НЕЗАВЕРШЕНЕ*/
 .latest-news__container {
     display: block;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
     vertical-align: baseline;
 }
 .latest-news__top {
@@ -39,8 +38,12 @@ text-align: center;
 margin-top: 25px;
 }
 .article__container {
+    margin-top: 0px;
+    margin-bottom: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
     display: grid;
-    gap: 5px;
+    gap: 20px;
 }
 .furniture-foto {
     border: 1px solid var(--border-color);
@@ -54,4 +57,11 @@ grid-template-columns: 1fr 1fr;}
     .article__container {
         grid-template-columns: 1fr 1fr 1fr;
     }
+}
+.latest-news-navigation-link, .navigation-arrow-right {
+    color: rgb(145, 121, 98);
+}
+.latest-news-navigation-link:hover, .navigation-arrow-right:hover {
+    color:rgb(145, 121, 98) ;
+    text-decoration: underline ;
 }
