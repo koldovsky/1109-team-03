@@ -79,6 +79,7 @@
 
 .product-slider__best {
     display: inline;
+    float: left;
     color: var(--link-color);
     font-size: 30px;
     font-family: "Archivo", sans-serif;
@@ -87,10 +88,12 @@
 
 .product-slider__items {
     display: inline;
+    float: left;
     color: var(--title-color);
     font-size: 30px;
     font-family: "Archivo", sans-serif;
     font-weight: 600;
+    padding-left: 5px;
 }
 
 .product-slider__see-more {
@@ -101,7 +104,7 @@
     font-weight: 700;
     text-decoration-line: underline;
     letter-spacing: 2.2px;
-    padding-top: 60px;
+    float: right;
 }
 
 .product-slider {
