@@ -6,6 +6,10 @@
     padding-bottom: 40px;
     vertical-align: baseline;
 }
+.latest-news__number, .latest-news__text {
+    color: rgb(112,112,112);
+    font-weight: bold;
+}
 .latest-news__top {
 margin-right: -20px;
 margin-left: -20px;
@@ -48,7 +52,7 @@ margin-top: 25px;
 }
 .furniture-foto {
     border: 1px solid var(--border-color);
-    padding: 5px;
+    padding: 10px;
 }
 @media (min-width: 600px) {
     .article__container {
@@ -59,8 +63,22 @@ grid-template-columns: 1fr 1fr;}
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+.furniture-foto__date {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color: rgb(112,112,112) ;
+    font-style: italic;
+}
+.furniture-foto__text {
+    color: rgb(141,141,141);
+}
+.furniture-foto__title, .furniture-foto__text {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 .latest-news-navigation-link, .navigation-arrow-right {
     color: rgb(145, 121, 98);
+    font-weight: bold;
 }
 .latest-news-navigation-link:hover, .navigation-arrow-right:hover {
     color:rgb(145, 121, 98) ;
