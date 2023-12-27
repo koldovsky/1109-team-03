@@ -165,6 +165,14 @@
     margin-right: 30px;
 }
 
+.product-slider__images .product-slider__image {
+    display: block;
+}
+
+.product-slider__image .product-slider__ribbon {
+    position: relative;
+}
+
 @media (min-width: 768px) {
     .offer {
         display: grid;
