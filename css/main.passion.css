@@ -430,7 +430,60 @@
     }
 
     .goods-menu__item:hover img {
-        filter: grayscale(60%);
+        filter: grayscale(80%);
     }
+
+    .goods-menu__item .icon_header,
+.goods-menu__item .icon__title {
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
+.goods-menu__item:hover .icon_header,
+.goods-menu__item:hover .icon__title {
+    opacity: 1;
+}
+}
+
+.goods-menu__item {
+    position: relative;
+}
+
+
+.icon__title {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    width: 95%;
+}
+
+.icon_header {
+    z-index: 1;
+
+}
+
+.icon_header,
+.icon__title {
+    text-align: center;
+    color: #fff;
+    pointer-events: none;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.icon_header {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Archivo', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+}
