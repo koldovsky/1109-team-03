@@ -1,8 +1,4 @@
 @import url(global.css);
 @import url(header.css);
+@import url(about-us.partial.css);
 @import url(footer.css);
-
-header {
-    background: none;
-    height: auto;
-}

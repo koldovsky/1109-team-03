@@ -29,6 +29,8 @@
     --about-download-color: rgb(229, 233, 226);
     --button-main-color: #917962;
     --button-variable-color: #939393;
+    --about-us-text-color: rgb(141,141,141);
+    --about-us-banner-color: rgba(247,244,240,0.58);
 }
 
 body {
