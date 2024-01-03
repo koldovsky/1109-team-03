@@ -97,6 +97,7 @@ header {
 .history__image img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 .history__about {
   background-color: var(--about-us-history-background);
