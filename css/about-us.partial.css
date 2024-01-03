@@ -1,3 +1,8 @@
+body {
+  font-family: 'Archivo', sans-serif;
+  letter-spacing: .05em;
+}
+
 p {
   margin: 0;
 }
@@ -124,15 +129,11 @@ header {
   color: var(--link-color);
   text-decoration: underline;
 }
-.showroom {
-}
 .showroom__container {
   padding: 90px 24px;
 }
 .showroom__about {
   color: var(--about-us-text-color);
-}
-.showroom__about-number {
 }
 .showroom__about-title {
   font-size: 34px;
@@ -178,6 +179,64 @@ header {
 .showroom__image img{
   aspect-ratio: 3/4;
 }
+.clients{
+  background-image: url("../img/about-us/about-us-background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.clients__container{
+  padding: 90px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.clients__title{
+  margin-top: 20px;
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--questions-line-color);
+}
+.clients__subtitle{
+  text-align: center;
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.clients__gallery{
+  gap: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(10, 142px);
+  margin-top: 45px;
+}
+.clients__gallery img{
+  background-color: var(--about-us-gallery-background);
+  padding: 27px 25px;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.clients__headling{
+  margin-top: 50px;
+  font-size: 22px;
+  color: var(--questions-line-color);
+  font-weight: 700;
+}
+.clients__link{
+  margin-top:20px
+}
+.clients__link a{
+  color: var(--link-color);
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 14px;
+}
+@media (min-width:480px) {
+  .clients__gallery{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 142px);
+  }
+}
 @media (min-width: 768px) {
   .production__container {
     padding: 115px 15px;
@@ -208,6 +267,18 @@ header {
     object-fit: cover;
     min-width: 350px;
   }
+  .clients__gallery{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+    gap:30px;
+  }
+  .clients__title{
+    font-size: 41px;
+  }
+  .clients__subtitle{
+    font-size: 18px;
+  }
 }
 @media (min-width: 991px) {
   .showroom__about-title {
@@ -221,5 +292,14 @@ header {
   }
   .showroom__image img{
     max-width: 555px;
+  }
+  .clients__gallery{
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    gap:30px;
+  }
+  .clients__title{
+    font-size: 48px;
   }
 }
