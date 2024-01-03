@@ -219,9 +219,6 @@ header {
   .showroom__about{
     flex-basis: 50%;
   }
-  .showroom__image{
-    flex-basis: 50%;
-  }
   .showroom__image img{
     max-width: 555px;
   }
