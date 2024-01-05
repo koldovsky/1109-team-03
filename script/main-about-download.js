@@ -1,11 +1,11 @@
-function () {
-    const downloadButton = document.getElementById('download-button');
+document.addEventListener('DOMContentLoaded', function () {
+    const downloadButton = document.getElementById('download-button-pdf');
 
     downloadButton.addEventListener('click', function () {
-        const pdfUrl = 'img/about-us.pdf';
+        const pdfUrl = '.about-us.pdf';
         const downloadLink = document.createElement('a');
         downloadLink.href = pdfUrl;
-        downloadLink.download = 'About-us.pdf';
+        downloadLink.download = 'about-us.pdf';
         downloadLink.click();
     });
-};
+});
