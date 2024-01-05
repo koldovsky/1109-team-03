@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+function () {
     const downloadButton = document.getElementById('download-button');
 
     downloadButton.addEventListener('click', function () {
@@ -8,4 +8,4 @@ document.addEventListener('DOMContentLoaded', function () {
         downloadLink.download = 'About-us.pdf';
         downloadLink.click();
     });
-});
+};
