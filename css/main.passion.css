@@ -260,6 +260,9 @@
 
 .section-benefits {
     background-image: url("../img/background/benefits-background.svg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .information__cards {

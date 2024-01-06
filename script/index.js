@@ -4,4 +4,5 @@ document.addEventListener('partialsLoaded', () => {
     import('./footer-gallery.js');
     import('./main-passion.partial.js');
     import('./main-latest-news.partial.js');
+    import('./main-about-download.js')
 });
