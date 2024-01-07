@@ -5,4 +5,5 @@ document.addEventListener('partialsLoaded', () => {
     import('./main-passion.partial.js');
     import('./main-latest-news.partial.js');
     import('./main-about-download.js')
+    import('./main-offer-carousel.js')
 });
