@@ -5,6 +5,8 @@
     padding-top: 100px;
     padding-bottom: 40px;
     vertical-align: baseline;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .latest-news__number, .latest-news__text {
     color: rgb(112,112,112);

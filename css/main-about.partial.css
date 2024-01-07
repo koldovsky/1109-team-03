@@ -1,137 +1,154 @@
+.main__about {
+    margin: auto;
+    width: 70%;
+}
+
 .about {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-left: 0;
-  padding-right: 0;
-  margin-bottom: 0;
-  padding-top: 60px;
-  padding-bottom: 105px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 20px;
+    padding-top: 60px;
+    padding-bottom: 105px;
 }
 
 @media (max-width: 768px) {
-  .about {
-    flex-direction: column;
-    align-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
-    width: 100%;
-    height: auto;
-  }
-}
 
-.about__picture img, .about__main {
-  width: 40%;
-  box-sizing: border-box;
-  align-items: center;
+    .main__about,
+    .about {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 100%;
+        height: auto;
+    }
 }
 
 .about__picture {
-  margin-right: 30px;
-  margin-left: 30px;
-  max-width: 40%;
-  padding-left: 30px;
-  padding-right: 30px;
-  height: auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.about__picture img,
+.about__main {
+    flex: 1;
+    width: 50%;
+    box-sizing: border-box;
+    height: auto;
+}
+
+.about__picture {
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 48%;
+    padding-left: 0;
+    padding-right: 0;
+    height: auto;
 }
 
 .about__picture img {
-  width: 100%;
-  height: 100%;
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
 }
 
-.about__main { 
-  text-align: left;
-  padding-left: 30px;
-  padding-right: 30px;
+.about__main {
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .about__number {
-  color: var(--text-color);
-  font-size: 13px;
+    color: var(--text-color);
+    font-size: 13px;
 }
 
 .about__title {
-  font-family: "Archivo", "Open Sans";
-  font-weight: bold;
-  color: var(--title-color);
-  font-size: 48px; 
+    font-family: "Archivo", "Open Sans";
+    font-weight: bold;
+    color: var(--title-color);
+    font-size: 48px;
 }
 
 .about__text-main {
-  margin-bottom: 15px;
-  margin-top: 15px;
-  color: var(--subtitle-color);
-  font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: var(--subtitle-color);
+    font-size: 18px;
 }
 
 .about__text {
-  margin-bottom: 10px;
-  margin-top: 15px;
-  color: var(--text-color);
-  font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    color: var(--text-color);
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .button-container {
-  margin-top: 20px;
-  margin-bottom: 15%;
+    margin-top: 20px;
+    margin-bottom: 15%;
 }
 
 .button-container__button {
-  display: inline;
-  padding: 10px 23px;
-  font-size: 16px;
-  border: 2px solid var(--button-main-color);
-  background-color: var(--button-main-color);
-  color: var(--footer-text-color);
-  border: none; 
+    display: inline;
+    padding: 10px 23px;
+    font-size: 16px;
+    border: 2px solid var(--button-main-color);
+    background-color: var(--button-main-color);
+    color: var(--footer-text-color);
+    border: none;
 }
 
 .button-container__button:hover {
-  background-color: var(--button-variable-color);
-  color: var(--footer-text-color);
-  border: var(--button-main-color);
+    background-color: var(--button-variable-color);
+    color: var(--footer-text-color);
+    border: var(--button-main-color);
 }
 
 .about__download {
-  box-sizing: border-box;
-  bottom: 0;
-  width: 90%;
-  background-color: var(--about-download-color); 
-  padding: 20px; 
-  margin: 30px;
-  text-align: center; 
+    box-sizing: border-box;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--about-download-color);
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
 }
 
 .about__download-text-main {
-  font-family: "Archivo", "Open Sans";
-  color: var(--title-color);
-  font-size: 33px; 
-  font-weight: bold; 
-  margin-bottom: 10px; 
+    font-family: "Archivo", "Open Sans";
+    color: var(--title-color);
+    font-size: 33px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .about__download-text {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  color: var(--link-color);
-  font-size: 18px; 
-  margin-bottom: 15px; 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: var(--link-color);
+    font-size: 18px;
+    margin-bottom: 15px;
 }
 
 .button-download__pdf {
-  background-color: var(--about-download-color); 
-  color: var(--link-color); 
-  font-weight: bold;
-  border: 2px solid var(--link-color);
-  padding: 10px 20px; 
-  font-size: 16px; 
-  transition: 0.3s;
-  cursor: pointer; 
+    background-color: var(--about-download-color);
+    color: var(--link-color);
+    font-weight: bold;
+    border: 2px solid var(--link-color);
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .button-download__pdf:hover {
-  background-color: var(--link-color); 
-  color: var(--bg-new-product-message);
+    background-color: var(--link-color);
+    color: var(--bg-new-product-message);
 }

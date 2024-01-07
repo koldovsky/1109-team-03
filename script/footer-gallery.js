@@ -10,7 +10,7 @@ images.forEach((image) => {
     modalText.innerHTML = image.alt;
     modalGallery.classList.add("appear");
 
-    close.addEventListener("click", () => {
+    modalGallery.addEventListener("click", () => {
       modalGallery.classList.remove("appear");
     });
   });

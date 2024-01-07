@@ -207,7 +207,7 @@
   list-style: none;
 }
 .footer__nav-links li {
-  margin: 10px 5px;
+  margin: 10px 0;
 }
 
 .footer__nav-link {

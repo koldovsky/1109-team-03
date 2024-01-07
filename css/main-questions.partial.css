@@ -100,10 +100,48 @@
     font-size: 19px;
 }
 
-.question__preview span {
+
+
+
+
+
+.question__preview-showmore {
+    display: block;
+    width: 15px;
+    height: 2px;
+    position: relative;
+    background: var(--subtitle-color);
+    cursor: pointer;
+    transition: background .2s ease-out;
     color: var(--subtitle-color);
-    font-size: 30px;
+    align-self: center;
 }
+
+.question__preview-showmore:hover {
+    background: var(--title-color);
+}
+
+.question__preview-showmore:before {
+    content: '';
+    width: 15px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    background: var(--subtitle-color);
+    transition: transform .3s ease;
+    transform: rotate(-90deg) scaleX(1);
+}
+
+.question__preview-showmore:hover::before { /* .question__preview-showmore .showing::after */
+    transform: rotate(-90deg) scaleX(0);
+    transition: transform .3s ease;
+}
+
+.question__preview-showmore:hover::before {
+    background: var(--title-color);
+}
+
+/*add transition for answer*/
 
 .questions .question__answer {
     margin-top: 25px;
