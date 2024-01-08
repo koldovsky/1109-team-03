@@ -1,4 +1,4 @@
-<script>
+
     let currentIndex = 0;
     const items = document.querySelectorAll('.product-slider__image');
     const totalItems = items.length;
@@ -41,4 +41,4 @@
 
     // Initial update
     updateSlider();
-</script>
+
