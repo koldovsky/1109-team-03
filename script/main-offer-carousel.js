@@ -1,44 +1,41 @@
-<script>
-    let currentIndex = 0;
-    const items = document.querySelectorAll('.product-slider__image');
-    const totalItems = items.length;
-    const itemsToShow = 3;  // Number of items to show at a time
+const slides = [
+    '<figure class="product-slider__image"><a class="product-slider__link" href="#"><img class="product-slider__icon" src="img/carousel_images/cabinet.jpg" alt="Wooden Cabinet"/><div class="product-slider__ribbon"><p>Bestseller</p></div></a><a class="product-slider__text" href="#">Snitch Cabinet</a><p class="product-slider__price">$90,00USD</p><button class="product-slider__button" type="button">Add to Cart</button></figure>',
+    '<figure class="product-slider__image"><a class="product-slider__link" href="#"><img class="product-slider__icon" src="img/carousel_images/armchair.jpg" alt="Grey Armchair"/></a><a class="product-slider__text" href="#">Lord Armchair</a><p class="product-slider__price">$220,00USD</p><button class="product-slider__button" type="button">Add to Cart</button></figure>',
+    '<figure class="product-slider__image"><a class="product-slider__link" href="#"><img class="product-slider__icon" src="img/carousel_images/drawer.jpg" alt="White drawer"/></a><a class="product-slider__text" href="#">Erica Chest of Drawers</a><p class="product-slider__price">$150,00USD</p><button class="product-slider__button" type="button">Add to Cart</button></figure>',
+    '<figure class="product-slider__image"><a class="product-slider__link" href="#"><img class="product-slider__icon" src="img/carousel_images/chair.jpg" alt="Green Chair"/></a><a class="product-slider__text" href="#">Ultimate Green Chair</a><p class="product-slider__price">$110,00USD</p><button class="product-slider__button" type="button">Add to Cart</button></figure>',
+];
 
-    function nextSlide() {
-        if (currentIndex < totalItems - itemsToShow) {
-            currentIndex++;
+let currentSlideIdx = 0;
+
+function renderSlide() {
+    const slideContainer = document.querySelector('.product-slider__images');
+    slideContainer.innerHTML = slides[currentSlideIdx];
+    if (window.matchMedia('(min-width: 768px)').matches) {
+        const secondSlideIdx = currentSlideIdx + 1 > slides.length - 1 ? 0 : currentSlideIdx + 1;
+        slideContainer.innerHTML += slides[secondSlideIdx];
+        if (window.matchMedia('(min-width: 1024px)').matches) {
+            const thirdSlideIdx = secondSlideIdx + 1 > slides.length - 1 ? 0 : secondSlideIdx + 1;
+            slideContainer.innerHTML += slides[thirdSlideIdx];
         }
-        updateSlider();
     }
+}
 
-    function prevSlide() {
-        if (currentIndex > 0) {
-            currentIndex--;
-        }
-        updateSlider();
-    }
+function nextSlide() {
+    currentSlideIdx = currentSlideIdx + 1 > slides.length - 1 ? 0 : currentSlideIdx + 1;
+    renderSlide();
+}
 
-    function updateSlider() {
-        const containerWidth = document.querySelector('.product-slider__container').offsetWidth;
-        const itemWidth = containerWidth / itemsToShow;
-        const newPosition = -currentIndex * itemWidth + 'px';
-        document.querySelector('.product-slider__images').style.transform = 'translateX(' + newPosition + ')';
-    }
+function prevSlide() {
+    currentSlideIdx = currentSlideIdx - 1 < 0 ? slides.length - 1 : currentSlideIdx - 1;
+    renderSlide();
+}
 
-    // Adjust the transition property when resizing
-    window.addEventListener('resize', () => {
-        const containerWidth = document.querySelector('.product-slider__container').offsetWidth;
-        const itemWidth = containerWidth / itemsToShow;
-        const transitionDuration = (totalItems / itemsToShow) * 0.5 + 's'; // Assuming 0.5s per item
+renderSlide();
 
-        document.querySelector('.product-slider__images').style.transition = `transform ${transitionDuration} ease-in-out`;
-        items.forEach(item => {
-            item.style.width = itemWidth + 'px';
-        });
+const buttonNext = document.querySelector('.navigation-button__next');
+buttonNext.addEventListener('click', nextSlide);
 
-        updateSlider();
-    });
+const buttonPrev = document.querySelector('.navigation-button__previous');
+buttonPrev.addEventListener('click', prevSlide);
 
-    // Initial update
-    updateSlider();
-</script>
+window.addEventListener('resize', renderSlide);

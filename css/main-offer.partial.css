@@ -71,7 +71,7 @@
 
 .product-slider__icon {
     position: relative;
-    width: 242px;
+    max-width: 100%;
     margin: auto;
 }
 
@@ -110,6 +110,11 @@
     letter-spacing: 2.2px;
     float: right;
     cursor: hover;
+
+}
+
+.product-slider__see-more:hover {
+    color: var(--subtitle-color);
 }
 
 .product-slider {
@@ -162,13 +167,20 @@
     position: relative;
 }
 
+.product-slider__container {
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    overflow: hidden; /* Hide overflowing content */
+}
+
 .product-slider__image {
-    width: auto;
-    flex: 0 0 auto;
+    flex: 0 0 auto; /* Make sure each slide has a fixed size */
+    width: 100%; /* Ensure each slide takes the full width of the container */
     text-align: left;
     margin-right: 30px;
     margin-left: 30px;
     position: relative;
+
 }
 
 .navigation-button__previous,
