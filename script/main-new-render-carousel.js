@@ -1,6 +1,5 @@
 export function renderReview(reviews) {
     let reviewDomString = '';
-    console.log(reviews);
     for (let i = 0; i < reviews.length; i++) {
         const review = reviews[i];
         reviewDomString += `

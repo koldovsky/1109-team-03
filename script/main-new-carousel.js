@@ -16,7 +16,6 @@ function moveCarousel(direction) {
       ScreenOffset = 2;
   };
   const itemWidth = itemCarousel[0].offsetWidth;
-  console.log('!!!');
   currentIndex = Math.max(0, Math.min(currentIndex + direction, itemCarousel.length - ScreenOffset));
   const translateValue = -currentIndex * itemWidth + 'px';
   reviewContainer.style.transform = 'translateX(' + translateValue + ')';
