@@ -6,6 +6,7 @@ const slides = [
 ];
 
 let currentSlideIdx = 0;
+let currentScrollPosition = 0;
 
 function renderSlide() {
     const slideContainer = document.querySelector('.product-slider__images');
@@ -19,11 +20,14 @@ function renderSlide() {
         }
     }
 
-        // Smoothly scroll to the new slide
-        slideContainer.scrollTo({
-            left: currentScrollPosition + slideContainer.offsetWidth,
-            behavior: 'smooth',
-        });
+    // Update currentScrollPosition here, assuming you are trying to scroll to the next slide
+    currentScrollPosition += slideContainer.offsetWidth;
+
+    // Smoothly scroll to the new slide
+    slideContainer.scrollTo({
+        left: currentScrollPosition,
+        behavior: 'smooth',
+    });
 }
 
 function nextSlide() {
