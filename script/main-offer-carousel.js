@@ -18,6 +18,12 @@ function renderSlide() {
             slideContainer.innerHTML += slides[thirdSlideIdx];
         }
     }
+
+        // Smoothly scroll to the new slide
+        slideContainer.scrollTo({
+            left: currentScrollPosition + slideContainer.offsetWidth,
+            behavior: 'smooth',
+        });
 }
 
 function nextSlide() {
