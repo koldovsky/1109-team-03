@@ -6,25 +6,20 @@ let showingText = document.querySelector('.question__answer.showing');
 function show() {
     showmoreButtons.forEach((button, index) => {
         button.addEventListener('click', () => {
-            if (showingButton) {
-                showingButton.classList.remove('showing');
-                showingText.classList.remove('showing');
-            }
+            showmoreButtons.forEach(butt => butt.classList.remove('showing'));
+            showmoreTexts.forEach(text => text.classList.remove('showing'));
             button.classList.toggle('showing');
             showmoreTexts[index].classList.toggle('showing');
-            showingButton = document.querySelector('.question__preview-showmore.showing');
-            showingText = document.querySelector('.question__answer.showing');
-            show();
-        })
-        if (showingButton) {
+            showingButton = button;
+            showingText = showmoreTexts[index];
             showingButton.addEventListener('click', () => {
-                showingButton.classList.remove('showing');
-                showingText.classList.remove('showing');
+                showmoreButtons.forEach(b => b.classList.remove('showing'));
+                showmoreTexts.forEach(t => t.classList.remove('showing'));
                 showingButton = null;
                 showingText = null;
                 show();
             })
-        }
+        })
     });
 }
 

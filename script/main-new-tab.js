@@ -1,4 +1,4 @@
-import contentTab from "../content/tab.js";
+import contentTab from "../content/tab.js"; 
 import { renderTab } from "./main-new-render-tab.js";
 
 renderTab(contentTab);
